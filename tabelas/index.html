@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+    <style>
+        table {
+            cursor: pointer;
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            border: solid 1px gray;
+        }
+
+        table thead th {
+            background-color: black;
+            color: white;
+
+        }
+
+        table tfoot td {
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: dimgray;
+
+        }
+
+        table tbody tr:hover {
+            background-color: rgb(209, 197, 181);
+        }
+    </style>
+</head>
+
+<body>
+    <table width="200" align="center" cellspacing="0" cellpadding="5">
+        <caption>Tabela de Alunos</caption>
+        <thead>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th title="Idade">Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samuel</td>
+                <td>32</td>
+            </tr>
+            <tr>
+                <td>Salmon</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td>Nathy</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Ester</td>
+                <td>33</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>4</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
